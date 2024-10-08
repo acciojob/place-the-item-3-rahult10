@@ -1,2 +1,13 @@
+/* CSS for the holder element */
+.holder {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+    justify-content: space-evenly; /* Evenly spaces items in each row */
+    gap: 20px; /* Adds space between the items */
+}
 
-/* Your CSS Code here. */
+/* Optional: Set width for individual items to make sure they fit nicely */
+.holder > * {
+    flex: 1 1 200px; /* Sets the basis for each item, allowing them to grow or shrink */
+    box-sizing: border-box; /* Ensures padding/borders are included in the width */
+}
